@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASSIGNMENT-05</title>
-</head>
-<body>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
     <header>
-        <nav>
-            
-        </nav>
+      <nav class="flex justify-between px-14 mt-6">
+        <!-- logo and name start  -->
+        <div class="flex items-center gap-2.5">
+          <figure class="w-[40px]"><img src="assets/logo.png" alt="" /></figure>
+          <h1 class="text-[#006747] text-[15px] font-bold">
+            Emergency <br />
+            Service
+          </h1>
+        </div>
+        <!-- logo and name end -->
+
+        <!-- heart, coin nad copy section start -->
+        <section class="flex items-center gap-5">
+          <!-- heart -->
+          <div class="flex justify-center items-center bg-[#41ff6b1a] px-6 py-2.5 rounded-3xl gap-1">
+            <span>0</span>
+            <img class="w-[25px]" src="assets/heart.png" alt="" />
+          </div>
+
+          <!-- coin -->
+          <div class="flex justify-center items-center bg-[#41ff6b1a] px-6 py-2.5 rounded-3xl gap-1 ">
+            <span>100</span>
+            <img width="25px" src="assets/coin.png" alt="" />
+          </div>
+
+          <!-- copy -->
+          <div class="flex justify-center items-center bg-[#00a63e] px-6 py-2.5 rounded-3xl ">
+            <h1 class="text-white font-medium"><span>0</span>
+            <span>Copy</span></h1>
+           
+        </section>
+        <!-- heart, coin nad copy section end -->
+      </nav>
     </header>
     <main></main>
     <footer></footer>
-</body>
+  </body>
 </html>
