@@ -11,10 +11,15 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script
+      src="https://kit.fontawesome.com/992a324739.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
+  <body class="bg-[#f5fff6]">
     <header>
-      <nav class="flex justify-between px-14 mt-6">
+      <nav class="flex justify-between px-14 mt-6 mb-6">
         <!-- logo and name start  -->
         <div class="flex items-center gap-2.5">
           <figure class="w-[40px]"><img src="assets/logo.png" alt="" /></figure>
@@ -28,27 +33,76 @@
         <!-- heart, coin nad copy section start -->
         <section class="flex items-center gap-5">
           <!-- heart -->
-          <div class="flex justify-center items-center bg-[#41ff6b1a] px-6 py-2.5 rounded-3xl gap-1">
-            <span>0</span>
+          <div
+            class="flex justify-center items-center bg-[#41ff6b1a] px-6 py-2.5 rounded-3xl gap-1"
+          >
+            <span class="font-bold">0</span>
             <img class="w-[25px]" src="assets/heart.png" alt="" />
           </div>
 
           <!-- coin -->
-          <div class="flex justify-center items-center bg-[#41ff6b1a] px-6 py-2.5 rounded-3xl gap-1 ">
-            <span>100</span>
-            <img width="25px" src="assets/coin.png" alt="" />
+          <div
+            class="flex justify-center items-center bg-[#41ff6b1a] px-6 py-2.5 rounded-3xl gap-1"
+          >
+            <span class="font-bold">100</span>
+            <img class="w-[25px]" src="assets/coin.png" alt="" />
           </div>
 
           <!-- copy -->
-          <div class="flex justify-center items-center bg-[#00a63e] px-6 py-2.5 rounded-3xl ">
-            <h1 class="text-white font-medium"><span>0</span>
-            <span>Copy</span></h1>
-           
+          <div
+            class="flex justify-center items-center bg-[#00a63e] px-6 py-2.5 rounded-3xl"
+          >
+            <h1 class="text-white font-medium">
+              <span>0</span> <span>Copy</span>
+            </h1>
+          </div>
         </section>
         <!-- heart, coin nad copy section end -->
       </nav>
     </header>
-    <main></main>
+
+    <!-- banner section start -->
+    <section
+      class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center py-6"
+    >
+      <figure class="flex justify-center">
+        <img class="w-[90px]" src="assets/logo-dark.png" alt="" />
+      </figure>
+      <h1 class="font-bold text-[40px] text-white">
+        Emergency Service Directory
+      </h1>
+      <p class="text-white font-normal">
+        Government Emergency Services at Your Fingertip - A Project by
+        Government of the People's Republic of Bangladesh
+      </p>
+    </section>
+    <!-- banner section end -->
+
+    <main class="w-[85%] mx-auto">
+      <section class="grid grid-cols-4 gap-8">
+        <div class="bg-emerald-500 col-span-3">
+          <div>
+            <!-- 1st 3 cards start -->
+            <div
+              class="p-[32px] bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]"
+            >
+              <figure class="flex justify-between border items-center mb-4">
+                <img src="assets/emergency.png" alt="" />
+                <i class="fa-regular fa-heart"></i>
+              </figure>
+              <div>
+                <h3 class="text-2xl font-medium">National Emergency Number</h3>
+                <p class="text-[18px] font-normal">National Emergency</p>
+              </div>
+            </div>
+            <!-- 1st 3 cards end -->
+          </div>
+          <div class="bg-fuchsia-500">djkfsg</div>
+          <div class="bg-fuchsia-200">sadkjf</div>
+        </div>
+        <div class="bg-blue-400">sdklf</div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
