@@ -19,11 +19,11 @@
   </head>
   <body class="bg-[#f5fff6]">
     <header>
-      <nav class="flex justify-between px-14 mt-6 mb-6">
+      <nav class="flex justify-between px-3 lg:px-14 mt-2 lg:mt-4 mb-2 lg:mb-4">
         <!-- logo and name start  -->
         <div class="flex items-center gap-2.5">
-          <figure class="w-[40px]"><img src="assets/logo.png" alt="" /></figure>
-          <h1 class="text-[#006747] text-[15px] font-bold">
+          <figure class="w-[30px] lg:w-[40px]"><img src="assets/logo.png" alt="" /></figure>
+          <h1 class="text-[#006747] text-[12px] lg:text-[15px] font-bold">
             Emergency <br />
             Service
           </h1>
@@ -31,26 +31,26 @@
         <!-- logo and name end -->
 
         <!-- heart, coin nad copy section start -->
-        <section class="flex items-center gap-5">
+        <section class="flex items-center gap-1 lg:gap-5">
           <!-- heart -->
           <div
-            class="flex justify-center items-center bg-[#41ff6b1a] px-6 py-2.5 rounded-3xl gap-1"
+            class="flex justify-center items-center bg-[#41ff6b1a] px-3 lg:px-6 py-1.5 lg:py-2.5 rounded-3xl gap-1"
           >
             <span class="font-bold">0</span>
-            <img class="w-[25px]" src="assets/heart.png" alt="" />
+            <img class="w-[18px] lg:w-[25px]" src="assets/heart.png" alt="" />
           </div>
 
           <!-- coin -->
           <div
-            class="flex justify-center items-center bg-[#41ff6b1a] px-6 py-2.5 rounded-3xl gap-1"
+            class="flex justify-center items-center bg-[#41ff6b1a] px-3 lg:px-6 py-1.5 lg:py-2.5 rounded-3xl gap-1"
           >
             <span class="font-bold">100</span>
-            <img class="w-[25px]" src="assets/coin.png" alt="" />
+            <img class="w-[18px] lg:w-[25px]" src="assets/coin.png" alt="" />
           </div>
 
           <!-- copy -->
           <div
-            class="flex justify-center items-center bg-[#00a63e] px-6 py-2.5 rounded-3xl"
+            class="flex justify-center items-center bg-[#00a63e] px-3 lg:px-6 py-1.5 lg:py-2.5 rounded-3xl"
           >
             <h1 class="text-white font-medium">
               <span>0</span> <span>Copy</span>
@@ -66,12 +66,12 @@
       class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-center py-6"
     >
       <figure class="flex justify-center">
-        <img class="w-[90px]" src="assets/logo-dark.png" alt="" />
+        <img class="w-[60px] lg:w-[90px]" src="assets/logo-dark.png" alt="" />
       </figure>
-      <h1 class="font-bold text-[40px] text-white">
+      <h1 class="font-bold text-2xl lg:text-[40px] text-white mb-2">
         Emergency Service Directory
       </h1>
-      <p class="text-white font-normal">
+      <p class="text-white text-[12px] lg:font-normal mx-10">
         Government Emergency Services at Your Fingertip - A Project by
         Government of the People's Republic of Bangladesh
       </p>
@@ -81,18 +81,18 @@
     <main class="w-[95%] mx-auto">
       <!-- ----------------------------------------------------------------------- -->
 
-      <section class="grid grid-cols-12 gap-6 mt-[48px] mb-15">
+      <section class="grid grid-cols-2 lg:grid-cols-12 sm:gap-2.5 lg:gap-6 mt-[48px] mb-15">
         <!-- All card items start -->
-        <div class="col-span-9">
+        <div class="col-span-1 lg:col-span-9 ">
           <!-- 1st 3 cards start -->
-          <div class="grid grid-cols-3 gap-5 mb-[30px]">
+          <div class="grid grid-rows-1 lg:grid-cols-3 gap-5 mb-[30px] ">
             <!-- 1st card start -->
             <div
               class="col-span-1 p-[15px] rounded-2xl bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]"
             >
               <figure class="flex justify-between items-center mb-4">
                 <img
-                  class="p-3 rounded-2xl w-[50px] bg-[#ffe3e2]"
+                  class="p-1 lg:p-3 rounded-2xl w-[35px] lg:w-[50px] bg-[#ffe3e2]"
                   src="assets/emergency.png"
                   alt=""
                 />
@@ -103,19 +103,20 @@
                 <p class="font-normal text-[#8e8e93]">National Emergency</p>
               </div>
               <div class="mb-6">
-                <h3 class="text-2xl font-medium mb-1">999</h3>
+                <h3 class="text-[18px] lg:text-2xl font-medium mb-1">999</h3>
                 <span class="px-4 py-1.5 bg-[#f2f2f2] rounded-2xl text-[13px]"
                   >All</span
                 >
               </div>
               <div class="flex gap-2">
                 <button
-                  class="flex items-center gap-1 hover:cursor-pointer px-12 py-2 text-[12px] border border-[#D4D6D5] text-[#8e8e93] rounded-2xl"
+                  class="flex items-center gap-1 hover:cursor-pointer px-9 lg:px-12 py-2 text-[12px] border border-[#D4D6D5] text-[#8e8e93] rounded-2xl"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
+                  id="call"
+                  class="call-btn flex items-center gap- hover:cursor-pointer px-9 lg:px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
                 >
                   <i class="fa-solid fa-phone pr-1"></i> Call
                 </button>
@@ -152,7 +153,7 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
+                  class="call-btn flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
                 >
                   <i class="fa-solid fa-phone pr-1"></i> Call
                 </button>
@@ -189,7 +190,7 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
+                  class="call-btn flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
                 >
                   <i class="fa-solid fa-phone pr-1"></i> Call
                 </button>
@@ -199,10 +200,10 @@
           </div>
           <!-- 1st 3 cards end -->
 
-          <!-- ------------------------------------------------------------------------ -->
+          <!-- ----------------------------------------------------------------- -->
 
           <!-- 2st 3 cards start -->
-          <div class="grid grid-cols-3 gap-5 mb-[30px]">
+          <div class="grid grid-rows-1 lg:grid-cols-3 gap-5 mb-[30px]">
             <!-- 1st card start -->
             <div
               class="col-span-1 p-[15px] rounded-2xl bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]"
@@ -232,7 +233,7 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
+                  class="call-btn flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
                 >
                   <i class="fa-solid fa-phone pr-1"></i> Call
                 </button>
@@ -269,7 +270,7 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
+                  class="call-btn flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
                 >
                   <i class="fa-solid fa-phone pr-1"></i> Call
                 </button>
@@ -306,7 +307,7 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
+                  class="call-btn flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
                 >
                   <i class="fa-solid fa-phone pr-1"></i> Call
                 </button>
@@ -319,7 +320,7 @@
           <!-- ----------------------------------------------------------------- -->
 
           <!-- 3rd 3 cards start -->
-          <div class="grid grid-cols-3 gap-5 mb-[30px]">
+          <div class="grid grid-rows-1 lg:grid-cols-3 gap-5 mb-[30px]">
             <!-- 1st card start -->
             <div
               class="col-span-1 p-[15px] rounded-2xl bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]"
@@ -349,7 +350,7 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
+                  class="call-btn flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
                 >
                   <i class="fa-solid fa-phone pr-1"></i> Call
                 </button>
@@ -386,7 +387,7 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="flex items-center gap- hover:cursor-pointer px-10 py-2.5 text-[12px] bg-[#00a63e] text-white rounded-2xl"
+                  class="call-btn flex items-center gap- hover:cursor-pointer px-10 py-2.5 text-[12px] bg-[#00a63e] text-white rounded-2xl"
                 >
                   <i class="fa-solid fa-phone pr-1"></i> Call
                 </button>
@@ -423,7 +424,7 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button
-                  class="flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
+                  class="call-btn flex items-center gap- hover:cursor-pointer px-12 py-2 text-[12px] bg-[#00a63e] text-white rounded-2xl"
                 >
                   <i class="fa-solid fa-phone pr-1"></i> Call
                 </button>
@@ -439,7 +440,7 @@
 
         <!-- Card history start -->
         <div
-          class="col-span-3 bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-4 rounded-2xl"
+          class="col-span-1 lg:col-span-3 bg-white shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] p-4 rounded-2xl"
         >
           <div class="flex justify-between items-center">
             <div class="flex items-center gap-2">
@@ -456,6 +457,7 @@
         <!-- card history end -->
       </section>
     </main>
-    <footer></footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
