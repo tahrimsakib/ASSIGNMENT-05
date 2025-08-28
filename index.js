@@ -36,7 +36,7 @@ const callbtn = document.querySelectorAll(".call-btn");
 for (const btn of callbtn) {
   btn.addEventListener("click", function () {
     if (coin < 20) {
-      alert("You do not have enough coins to make a call!");
+      alert("❌ You do not have enough coins to make a call!");
       return;
     }
     coin -= 20;
