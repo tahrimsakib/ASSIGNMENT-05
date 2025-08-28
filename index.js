@@ -20,7 +20,7 @@ const copybtn = document.querySelectorAll(".copy-btn");
 for (const btn of copybtn) {
   btn.addEventListener("click", function () {
     copy++;
-    alert('sdfkj')
+    alert('Copied:')
     copyCount.innerText = copy;
   });
 }
@@ -41,7 +41,12 @@ for (const btn of callbtn) {
     }
     coin -= 20;
     currentCoins.innerText = coin;
-    alert("📞 Calling" );
+
+    const parent = btn.parentNode.parentNode
+    const text = parent.querySelector('h1').innerText
+    const num = parent.querySelector('h3').innerText
+
+    alert(`📞 Calling ${text} ${num}` );
   });
 }
 
