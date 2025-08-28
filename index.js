@@ -11,21 +11,6 @@ for (const btn of heartbtn) {
   });
 }
 
-// copy section
-
-let copy = 0;
-const copyCount = document.getElementById("copy-count");
-
-const copybtn = document.querySelectorAll(".copy-btn");
-for (const btn of copybtn) {
-  btn.addEventListener("click", function () {
-    copy++;
-    alert('Copied:')
-    copyCount.innerText = copy;
-  });
-}
-
-
 //call button click to minus coin
 
 let coin = 100;
@@ -42,12 +27,24 @@ for (const btn of callbtn) {
     coin -= 20;
     currentCoins.innerText = coin;
 
-    const parent = btn.parentNode.parentNode
-    const text = parent.querySelector('h1').innerText
-    const num = parent.querySelector('h3').innerText
+    const parent = btn.parentNode.parentNode;
+    const text = parent.querySelector("h1").innerText;
+    const num = parent.querySelector("h3").innerText;
 
-    alert(`📞 Calling ${text} ${num}` );
+    alert(`📞 Calling ${text} ${num}...`);
   });
 }
 
 
+let copy = 0;
+const copyCount = document.getElementById("copy-count");
+
+function copyNum(button) {
+  const value = button.parentNode.previousElementSibling.children[0].innerText;
+  navigator.clipboard.writeText(value);
+
+  copy++; 
+  copyCount.innerText = copy;
+
+  alert("Copied: " + value);
+}
