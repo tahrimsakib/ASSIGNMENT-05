@@ -53,7 +53,7 @@ for (const btn of callbtn) {
     // callHistory.appendChild(entry);
 
     entry.innerHTML = `
-  <div class="flex justify-between border items-center p-4 my-4 bg-[#FAFAFA] rounded-xl shadow-sm">
+  <div class="flex justify-between items-center p-4 my-4 bg-[#FAFAFA] rounded-xl shadow-lg">
     <div>
       <h3 class=" font-normal text-[#111111] text-[15px]">${text}</h3>
       <p class="text-[#000000] text-base">${num}</p>
@@ -68,3 +68,7 @@ for (const btn of callbtn) {
   });
 }
 
+// handle clear button
+clearBtn.addEventListener("click", function () {
+  callHistory.innerHTML = "";
+});
