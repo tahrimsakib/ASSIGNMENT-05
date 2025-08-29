@@ -45,7 +45,7 @@ for (const btn of callbtn) {
     const text = parent.querySelector("h1").innerText;
     const num = parent.querySelector("h3").innerText;
 
-    alert("📞 Calling " + text + " " + num);
+    alert("📞 Calling " + text + " " + num + "...");
 
     // add entry to history
     const entry = document.createElement("p");
@@ -53,7 +53,7 @@ for (const btn of callbtn) {
     // callHistory.appendChild(entry);
 
     entry.innerHTML = `
-  <div class="flex justify-between items-center p-4 my-4 bg-[#FAFAFA] rounded-xl shadow-lg">
+  <div class="flex justify-between items-center p-4 my-4 bg-[#FAFAFA] rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
     <div>
       <h3 class=" font-normal text-[#111111] text-[15px]">${text}</h3>
       <p class="text-[#000000] text-base">${num}</p>
