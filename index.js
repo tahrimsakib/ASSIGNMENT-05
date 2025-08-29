@@ -1,25 +1,25 @@
 // heart section
 
 let count = 0;
-const countheart = document.getElementById("heart-count");
+const countHeart = document.getElementById("heart-count");
 
 const heartbtn = document.querySelectorAll(".heart-icon");
 for (const btn of heartbtn) {
   btn.addEventListener("click", function () {
     count++;
-    countheart.innerText = count;
+    countHeart.innerText = count;
   });
 }
 
 let copy = 0;
-const copyCount = document.getElementById("copy-count");
+const countCopy = document.getElementById("copy-count");
 
 function copyNum(button) {
   const value = button.parentNode.previousElementSibling.children[0].innerText;
   navigator.clipboard.writeText(value);
 
   copy++;
-  copyCount.innerText = copy;
+  countCopy.innerText = copy;
 
   alert("Copied: " + value);
 }
@@ -53,12 +53,12 @@ for (const btn of callbtn) {
     // callHistory.appendChild(entry);
 
     entry.innerHTML = `
-  <div class="flex justify-between items-center p-4 my-4 bg-[#FAFAFA] rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
+  <div class="flex justify-between items-end p-4 my-4 bg-[#FAFAFA] rounded-xl shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)]">
     <div>
       <h3 class=" font-normal text-[#111111] text-[15px]">${text}</h3>
-      <p class="text-[#000000] text-base">${num}</p>
+      <p class="text-[#000000] font-light">${num}</p>
     </div>
-    <p class="text-sm text-[#000000]">
+    <p class="text-[12px] text-[#000000]">
       ${new Date().toLocaleTimeString()}
     </p>
   </div>
